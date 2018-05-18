@@ -6,6 +6,7 @@
     <title>hello world</title>
 </head>
 <body>
-Hello World!
+<h1>Hello World!</h1>
+<h2>I love you!</h2>
 </body>
 </html>
