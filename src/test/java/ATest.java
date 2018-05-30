@@ -11,8 +11,12 @@ public class ATest {
 	public void test() {
 		String pattern = "yyyy-MM-dd HH:mm:ss";
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(2015, Calendar.JUNE, 5, 13, 45, 23);
+		calendar.set(2015, Calendar.JANUARY, 31, 13, 45, 23);
 		String format = new SimpleDateFormat(pattern).format(calendar.getTime());
 		System.out.println(format);
+		calendar.add(Calendar.MONTH,2);
+		System.out.println(new SimpleDateFormat(pattern).format(calendar.getTime()));
+		calendar.add(Calendar.MONTH,1);
+		System.out.println(new SimpleDateFormat(pattern).format(calendar.getTime()));
 	}
 }
